@@ -13,7 +13,7 @@ for(int i=0;i<5;i++){
     arr[]={1,2,3,4,5};
 
     therefore in c++ unlike java in c++ we cannot declare dynamic sized array 
-    without initialising it     
+    without INITiALISING it     
 
   */
 	return 0;

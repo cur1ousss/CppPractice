@@ -2,35 +2,27 @@
 using namespace std;
 int main(){
     
-    int arr[6]={1,1,1,2,2,3};
+    int arr[6]={1,2,1,2,2,3};
 
-int count;
+cout<<"\n PRinting array ";
+for(int i=0;i<6;i++)
+    cout<<"\t"<<arr[i];
 
-int tmp=1;
-for(int j=0;tmp<=6;){
-
- for(int i=1;i<6;i++){
-        if(arr[i-1]==arr[i]){
-
+    cout<<"\n\n";
+for(int i=0;i<6;i++){
+            int occCount=0;
+    for(int k=0;k<6;k++){
+        if(arr[i]!=0 && arr[k]!=0 && arr[i]==arr[k]){
+            // cout<<"\n Multiple Ocurrence of "<<arr[i];
+            occCount++;
+            if(i!=k)
+                arr[k]=0;       //setting to 0 to avoid count again that term which counted earlier since in loop again find same from another index
         }
     }
-tmp++;
+    if(arr[i]!=0)  
+        cout<<"\n Occurenece Count of arr[i] "<<arr[i]<<" is "<<occCount;
 }
-   
 
-
-/* 
-probaly soltutoin to solving index problem but whta 
-about when indexing dependdent nested for loop
-
-    for(int i=1;i<6;i++){
-        if(arr[i-1]==arr[i]){
-
-        }
-    }
-
-*/
-
-
+cout<<"\n\n";
     return 0;
 }

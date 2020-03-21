@@ -13,14 +13,23 @@ int num;
 cin>>num;
 
 //INCLUISVE
-if(num<5)
+if(num<5){
     int allFactors[num];
-else   
-    int allFactors[num/2];      // to reduce time complexity not iterate whole
-
+    cout<<"\n num<5";
+}
+else{
+int allFactors[num/2];      // to reduce time complexity not iterate whole
+    cout<<"\n num>5";
+}   
+cout<<"\n above";    
 int allFactors[num/2];  //if not write ERROR in line 28 say Undefined
+            //  ??? why doesnt override above condiiton of if num<5
+                    //since written explicilty
+
+// cout<<"\n below;"    //?? creates error in sizeAllFactorArr integer? WHY
 int sizeAllFactorArr=0; 
 
+cout<<"\n size of allFactors[] "<<sizeof(allFactors)/sizeof(int);
 for(int i=1;i<=num;i++){ 
     if(num%i==0){
         allFactors[sizeAllFactorArr]=i;

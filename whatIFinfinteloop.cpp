@@ -8,18 +8,6 @@ cout<<"\n\n enetred main function";
   
 cout<<"\n\n enetred main function 2nd statemnet";
 
-cout<<"\n\n enetred main function 2nd statemnet";
-
-cout<<"\n\n enetred main function 2nd statemnet";
-
-cout<<"\n\n enetred main function 2nd statemnet";
-
-cout<<"\n\n enetred main function 2nd statemnet";
-
-cout<<"\n\n enetred main function 2nd statemnet";
-
-cout<<"\n\n enetred main function 2nd statemnet";
-
 cout<<"\n\n BEFORE INFINTE LOOP";
 
 while(true){
@@ -36,7 +24,7 @@ not printed on output
 
  */
 
-
+    //??     WHY NOT EXECUTE 1 statement above ifninite while loop????????/
 
     return 0;
 }

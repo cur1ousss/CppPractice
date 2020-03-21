@@ -7,12 +7,17 @@ int arr[5]={1,2,3,4,5};
 
 //insert at various postiions   
 
+        // WORKS FOR ALL POSITONS front end mid
+
 //insert middle
 int newarr[6];
 
+cout<<"\n Lentght of array is 5 ";
+cout<<"\n Enter position to insert ";
 int posToInsert;
 cin>>posToInsert;
 
+cout<<"\n Enter elemente to inserte ";
 int elemToInsert;
 cin>>elemToInsert;
 
@@ -20,12 +25,12 @@ cin>>elemToInsert;
 
 for(int i=0;i<posToInsert;i++){
 
-    if(i==(posToInsert-1))
+    if(i==(posToInsert-1))          // posToinseret - 1       done due to differnece between position and index of number 
         newarr[i]=elemToInsert;
     else
         newarr[i]=arr[i];
 }
-    
+
 for(int i=posToInsert;i<6;i++){
 
     newarr[i]=arr[i-1];
@@ -49,7 +54,7 @@ for(int i=0;i<6;i++){
         
         */
 
-cout<<"\n Printing arrays";
+cout<<"\n \n Printing arrays";
 
 for(int i=0;i<6;i++)
     cout<<"\t"<<newarr[i];
