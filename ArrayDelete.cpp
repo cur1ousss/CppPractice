@@ -2,8 +2,80 @@
 using namespace std;
 int main(){
 cout<<"\n\n";
+            // ALso works for multiple Occurences
+int sizeArr;
+cout<<"\n Enter size array";
+cin>>sizeArr;
+
+int arr[sizeArr];
+
+cout<<"\n Enter arr elements";
+for(int i=0;i<sizeArr;i++)
+    cin>>arr[i];
+
+cout<<"\n Inputted Array is ";
+for(int i=0;i<sizeArr;i++)
+    cout<<"\t"<<arr[i];
+
+    cout<<"\n Enter elemnet to delette";
+int elemToDelete;
+    cin>>elemToDelete;
+
+for(int i=0;i<sizeArr;i++){
+    if(arr[i]==elemToDelete)
+        cout<<"\n Found element to delete at position "<<i;
+        else
+        {
+            cout<<"\n Elemnet not found fuck you";
+        }
+        
+}
+
+int j=-1; //back counter
+int deletedCount=0; 
+
+for(int i=0;i<sizeArr;i++){
+    if(arr[i]==elemToDelete){
+        deletedCount++;
+        arr[i]=-1;
+    }    
+}
+
+int newSize=sizeArr-deletedCount;
+
+int newArr[newSize];
+
+int tmpIndex=0;
+
+for(int i=0;i<sizeArr;i++){
+    if(arr[i]!=-1){
+        newArr[tmpIndex]=arr[i];
+        tmpIndex++;
+    }
+}
+
+cout<<"\n Printing Final Array ";
+for(int i=0;i<tmpIndex;i++)
+    cout<<"\t"<<newArr[i];
+cout<<"\n\n";
+return 0;
+}
 
 
+
+/*********************************************************************
+                         THIRD TRY >>>>>>>>>>>>
+
+#include<iostream>
+using namespace std;
+int main(){
+cout<<"\n\n";
+
+// Edge cases
+    // multiple occureneces how delete
+
+
+    
 
 /*
                 ERROR
@@ -26,7 +98,7 @@ cout<<"\n\n";
     //last elemetent not printed if long array or delted first or repeatingt elememnt
 
 
-*/
+*
 
 
 
@@ -92,7 +164,7 @@ cout<<"\n\n";
 return 0;
 }
 
-/*
+/*********************************************************************
                         SECOND TRY static mode
 #include<iostream>
 using namespace std;

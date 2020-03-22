@@ -76,7 +76,7 @@ for(int i=0;i<sizeAllFactorArr;i++){
                 }
         }
         if(isPrime==1){
-            // cout<<"\n   is PRime "<<allFactors[i];
+       
             primeFactors[sizePrimeFactorArr]=allFactors[i];
             sizePrimeFactorArr++; 
             }
